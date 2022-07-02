@@ -1,7 +1,7 @@
 # Image-Segmentation-on-Cell-Nuclei
 
 ## 1. Summary
-The project's goal is to develop a convolutional neural network model capable of detecting cracks in concrete with high accuracy. The issue is represented as a binary classification problem (no cracks/negative and cracks/positive). A dataset of 40000 photos is used to train the model (20000 images of concrete in good condition and 20000 images of concrete with cracks). The source of the dataset is being obtained from [concrete-with-cracks]https://data.mendeley.com/datasets/5y9wdsg2zt/2 .
+The project's goal is to develop a convolutional neural network model capable of detecting cracks in concrete with high accuracy. The issue is represented as a binary classification problem (no cracks/negative and cracks/positive). A dataset of 40000 photos is used to train the model (20000 images of concrete in good condition and 20000 images of concrete with cracks). The source of the dataset is being obtained from [Concrete-with-cracks](https://data.mendeley.com/datasets/5y9wdsg2zt/2)
 
 ## 2. IDE and Framework
 Spyder was used as the primary IDE throughout the project. Numpy, Matplotlib, and Tensorflow Keras are the major frameworks utilised in this project.
@@ -25,7 +25,7 @@ The model is shown in figure in a simplified form in the image below.
 
 ![model](https://user-images.githubusercontent.com/108482217/176982854-25238b54-99bb-4e2e-8fab-ef3f425a1d7f.png)
 
-The model is trained with a batch size of 16 and 10 epochs. After training, the model reaches 99% training accuracy and 95% validation accuracy. The training results are shown in the figures below.
+The model is trained with a batch size of 32 and 100 epochs. After training, the model reaches 99% training accuracy and 99% validation accuracy. The training results are shown in the figures below.
 
 ![accuracy](https://user-images.githubusercontent.com/108482217/176982864-39aac877-9499-453d-8cdb-92ba6a537a9a.png)
 ![loss](https://user-images.githubusercontent.com/108482217/176982870-70f8933f-ed61-41bf-a66b-79d267674ba8.png)
