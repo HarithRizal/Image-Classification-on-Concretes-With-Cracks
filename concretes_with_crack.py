@@ -12,7 +12,7 @@ from tensorflow.keras import applications, layers
 import pathlib as path
 
 #2. Data preparation
-root_path = r"C:\Users\asus\Desktop\AI and Machine Learning\deep learning with python\Datasets\Project-3-Image-Classification-to-Classify-Concretes-with-Cracks\Concrete Crack Images for Classification"
+root_path = r"C:\Users\asus\Desktop\AI and Machine Learning\deep learning with python\Datasets\Image-Classification-on-Concretes-With-Cracks\Concrete Crack Images for Classification"
 data_dir = path.Path(root_path)
 
 SEED = 12345
@@ -102,7 +102,7 @@ model.compile(optimizer=optimizer, loss=loss, metrics=['accuracy'])
 #%%
 #Perform model training
 EPOCHS = 100
-base_log_path = r"C:\Users\asus\Documents\tensorflow\GitHub\Project-3-Image-Classification-to-Classify-Concretes-with-Cracks\tb_logs"
+base_log_path = r"C:\Users\asus\Documents\tensorflow\GitHub\Image-Classification-on-Concretes-With-Cracks\tb_logs"
 log_path= os.path.join(base_log_path, datetime.datetime.now().strftime('%Y%m%d-%H%M%S') + '__Project_3')
 tb = keras.callbacks.TensorBoard(log_dir=log_path)
 es = keras.callbacks.EarlyStopping(monitor='val_loss', patience=10, verbose=1)
@@ -133,7 +133,7 @@ for i in range(4):
     plt.title(f"Prediction: {current_prediction}, Actual: {current_label}")
     plt.axis('off')
     
-save_path = r"C:\Users\asus\Documents\tensorflow\GitHub\Project-3-Image-Classification-to-Classify-Concretes-with-Cracks\img"
+save_path = r"C:\Users\asus\Documents\tensorflow\GitHub\Image-Classification-on-Concretes-With-Cracks\img"
 plt.savefig(os.path.join(save_path,"result.png"),bbox_inches='tight')
 plt.show()
 
